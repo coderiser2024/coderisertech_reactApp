@@ -1,0 +1,339 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+.page {
+  padding: 20px;
+}
+
+.services {
+  background-image: url("../../Assets/aboutbg.jpg");
+  padding: 20px 0;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.container {
+  /* max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 20px; */
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.service {
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+  height: 291px;
+}
+
+.aboutTxtclient-service {
+  font-family: none;
+  font-size: 40px;
+  text-align: start;
+  align-self: center;
+  color: #fff;
+}
+
+.aboutTxt-service {
+  font-size: 19px;
+  color: #ff9900;
+  text-align: justify;
+  line-height: 24px;
+  font-family: serif;
+}
+
+.service:hover {
+  background-color: #ff9900;
+}
+
+.service h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.service p {
+  font-size: 16px;
+}
+
+.herosection {
+  display: flex;
+  background-color: #000;
+  height: 166px;
+  align-items: center;
+  margin-left: -20px;
+  margin-right: -20px;
+  padding-left: 7.2%;
+}
+
+.aboutImg {
+  height: 500px;
+  width: 550px;
+}
+
+.abnoutSection {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 85px;
+  margin-top: 40px;
+}
+
+.aboutDescription {
+  height: 300px;
+  width: 500px;
+}
+
+.aboutTxt {
+  font-size: 19px;
+  color: #3d2c6f;
+  text-align: justify;
+  line-height: 24px;
+  font-family: serif;
+}
+
+.content h2 {
+  font-size: 35px;
+  text-decoration: underline;
+  font-family: emoji;
+  margin-top: 30px
+}
+
+.aboutDescription h2 {
+  color: #ff9900;
+  margin-top: -39px;
+  margin-bottom: 54px;
+}
+
+.container h2 {
+  font-family: none;
+  font-size: 40px;
+}
+
+.marqlogo {
+  height: 80px;
+  width: '100%';
+}
+
+.clientDescription {
+  padding: 72px
+}
+
+.serviceAboutImg {
+  height: 80px;
+  width: 80px;
+  border-radius: 50px;
+}
+
+.scroll-container {
+  margin-top: 20px;
+}
+
+.marq {
+  display: flex;
+  align-items: center;
+}
+
+.icon-card {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 150px;
+  margin: 0 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.icon-card img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.icon-card p {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.icon-card:hover {
+  transform: scale(1.1);
+}
+
+.App-view {
+  text-align: center;
+  padding: 50px;
+  background-color: #d8e5d8;
+  margin-left: -20px;
+  margin-right: -20px;
+  padding-left: 89px;
+  padding-right: 89px;
+}
+
+.aboutTxth2 {
+  font-family: none;
+  font-size: 40px;
+  text-align: start;
+  align-self: center;
+  margin-bottom: -20px;
+}
+
+.aboutTxtclient {
+  font-family: none;
+  font-size: 40px;
+  text-align: start;
+  align-self: center;
+}
+
+.aboutTxth3 {
+  font-family: none;
+  font-size: 40px;
+  text-align: start;
+  color: #ff9900;
+  margin-bottom: -5px;
+}
+
+.scroll-container {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.scroll-row {
+  display: flex;
+}
+
+.scroll-item {
+  display: inline-block;
+  margin: 10px;
+  text-align: center;
+  background-color: white;
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  transform-style: preserve-3d;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.scroll-item img {
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+}
+
+.scroll-item p {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.scroll-item:hover {
+  transform: translateY(-10px) perspective(1000px) rotateY(360deg);
+  box-shadow: 0 19px 24px rgba(0, 0, 0, 0.3);
+  background-color: #ff9900;
+}
+
+.scroll-item:hover p {
+  font-weight: bold;
+  /* Bold text on hover */
+  color: #333;
+}
+
+.success-achievements {
+  text-align: center;
+  padding: 50px;
+  background-color: #ede5ea;
+  margin-left: -20px;
+  margin-right: -20px;
+  padding-left: 89px;
+  padding-right: 89px;
+}
+
+.aboutTxtAchievements {
+  font-family: none;
+  font-size: 40px;
+  text-align: start;
+  align-self: center;
+  margin-bottom: -5px;
+}
+
+.aboutTxt-achievements {
+  font-size: 19px;
+  color: #3d2c6f;
+  text-align: justify;
+  line-height: 24px;
+  font-family: serif;
+  padding-bottom: 30px
+}
+
+.achievements-service {
+  height: 280px;
+  width: '100%';
+  padding: 10px;
+  object-fit: cover;
+  background-color: #fff;
+  margin-left: 10px;
+  border-radius: 10px;
+}
+.certifite-container{
+  padding: 20px;
+  padding-left: 89px;
+  padding-right: 89px;
+  background-color: #fff;
+  margin-left: -20px;
+  margin-right: -20px;
+  padding-bottom: 80px;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.logo-item {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+}
+
+.logo-item img {
+  width: 90px;
+  height: 90px;
+}
+@media (max-width: 780px) {
+  .abnoutSection{
+    display: block;
+  }
+  .aboutDescription{
+    display: contents;
+  }
+  .aboutDescription h2{
+    margin-top: 5%;
+  }
+  .mission{
+  flex-direction: column-reverse;
+  }
+ 
+}

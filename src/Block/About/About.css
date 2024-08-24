@@ -1,0 +1,143 @@
+.page {
+    padding: 20px;
+  }
+  .mission-vision-goals {
+    background-color: #fff;
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .mission, .vision, .goals {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 85px;
+  }
+  
+  .mission h2, .vision h2, .goals h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    margin-top: -55px
+  }
+  
+  .mission p, .vision p {
+    font-size: 18px;
+    margin: 0 auto;
+    max-width: 800px;
+    margin-top: 74px
+  }
+  
+  .goals ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .goals li {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .misionAboutImg{
+    height: 500px;
+    width: 550px;
+  }
+  .misionDescription{
+    height: 300px;
+    width: 500px;
+  }
+  .aboutTxt{
+    font-size: 17px;
+    color: #3d2c6f;
+    text-align: justify;
+    line-height: 24px;
+    font-family: serif;
+    margin-top: 20px;
+  }
+  .mission1-vision-goals {
+    background-color: #fff;
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .mission1, .vision, .goals {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 85px;
+  }
+  
+  .mission1 h2, .vision h2, .goals h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    margin-top: -55px
+  }
+  
+  .mission1 p, .vision p {
+    font-size: 18px;
+    margin: 0 auto;
+    max-width: 800px;
+    margin-top: 74px
+  }
+  
+  .goals ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .goals li {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .misionAboutImg1{
+    height: 500px;
+    width: 550px;
+  }
+  .misionDescription1{
+    height: 300px;
+    width: 500px;
+  }
+  .aboutTxt1{
+    font-size: 17px;
+    color: #3d2c6f;
+    text-align: justify;
+    line-height: 24px;
+    font-family: serif;
+    margin-top: 20px;
+  }
+  /* For medium devices (tablets, 600px to 900px) */
+@media (min-width: 768px) and (max-width: 900px) {
+ .mission h2{
+  margin-top: 55px;
+ }
+ .mission1 h2{
+  margin-top: 55px;
+ }
+ .mission1{
+  display: block;
+ }
+ .misionDescription1{
+  display: inline-block;
+ }
+ .mission p{
+  margin-top: 55px;
+}
+.mission{
+  padding-bottom: 25%;
+}
+ 
+  }
+  
+  /* For large devices (desktops, greater than 900px) */
+  @media (min-width: 900px) {
+   
+     .misionDescription1{
+      display: inline-block;
+     }
+    .mission p{
+      margin-top: 55px;
+    }
+  }
+  

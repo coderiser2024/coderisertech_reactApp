@@ -1,0 +1,225 @@
+.page {
+    padding: 20px;
+  }
+  /* Gallery.css */
+
+.gallery {
+  padding: 40px 0;
+  background-color: #f9f9f9;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.gallery-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 20px;
+  flex: 1 1 250px; /* Adjust width as needed */
+  max-width: 250px; /* Set a maximum width */
+  max-height: 250px; /* Set a maximum height */
+  opacity: 0;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%); /* Six-angle shape */
+}
+
+.animate-slide {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.gallery-item:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.top {
+  animation-name: slideInTop;
+}
+
+.left {
+  animation-name: slideInLeft;
+}
+
+.right {
+  animation-name: slideInRight;
+}
+
+@keyframes slideInTop {
+  0% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .overlay {
+  opacity: 1;
+}
+
+.overlay-content {
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+  transform: translateY(-20px);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.gallery-item:hover .overlay-content {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.overlay-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.overlay-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.selfiDescription{
+  color: #ff9900;
+}
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  transform-style: preserve-3d;
+}
+
+.image-gallery-item {
+  margin: 10px;
+  transition: transform 0.3s;
+  animation: image-rotate 6s infinite linear;
+}
+
+.image-gallery-img {
+  max-width: 200px; /* Increased size */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes image-rotate {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+/* Gallery.css */
+.gallery-container {
+  width: 100%;
+  overflow: hidden; /* Hide overflow to contain scrollable area */
+  perspective: 1000px; /* Perspective for 3D effect */
+  background-color: #f0f0f0; /* Optional: background color */
+  position: relative;
+}
+
+.gallery-scrollable {
+  display: flex;
+  animation: scrollLeftToRight 25s linear alternate alternate forwards running; /* Example using all properties */
+  width: calc(265px * 9); /* Adjust based on the number of images (250px + 15px margin) */
+}
+
+.gallery-image-item {
+  width: 250px; /* Fixed width for each image item */
+  height: 300px; /* Fixed height for each image item */
+  margin-right: 15px; /* Space between images */
+  position: relative; /* Position relative for absolute positioning of child */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
+  transform-style: preserve-3d;
+}
+
+.gallery-image-item img {
+  width: 100%; /* Make image responsive within item */
+  height: 100%; /* Make image fill the item */
+  object-fit: cover; /* Cover the image within the container */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
+}
+
+.gallery-image-item:hover img {
+  transform: rotateY(10deg) rotateX(5deg) scale(1.2); /* 3D effect with zoom on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+  z-index: 999; /* Bring image above other items */ 
+}
+
+@keyframes scrollLeftToRight {
+  0% {
+    transform: translateX(100%);
+  }
+  90% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

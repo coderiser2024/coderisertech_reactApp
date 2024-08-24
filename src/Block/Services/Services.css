@@ -1,0 +1,139 @@
+.page {
+  padding: 20px;
+}
+
+.services .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.services h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+
+}
+
+.service {
+  background-color: #f0f0f0;
+  /* Light gray background for service boxes */
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, 
+  box-shadow 0.4s ease;
+}
+.service:hover {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+  transform: translateY(-30px);
+  /* background-color: #333; */
+}
+.service:hover p {
+  color: #fff; /* Change description text color to white on hover */
+}
+.service h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.service p {
+  font-size: 15px;
+  text-align: justify;
+  font-family: none;
+
+}
+
+.serviceAboutImg {
+  height: 80px;
+  width: 80px;
+  border-radius: 50px;
+}
+.services {
+  padding: 50px 0;
+  background-color: #f0f0f0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #333333;
+}
+
+.technology-nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tech-button {
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin: 0 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tech-button.active {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.service {
+  background-color: #ffffff;
+  padding: 20px;
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+}
+
+.service h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.service p {
+  font-size: 14px;
+  color: #666666;
+}
+
+/* For medium devices (tablets, 600px to 900px) */
+@media (min-width: 768px) and (max-width: 900px) {
+ .services{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+ .container{
+  display: contents;
+ }
+ }
+ 
+ /* For large devices (desktops, greater than 900px) */
+ @media (min-width: 900px) {
+  
+ }
+
+
